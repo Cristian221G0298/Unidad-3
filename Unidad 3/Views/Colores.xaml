@@ -4,16 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Unidad_3.Views"
+                          xmlns:vm="clr-namespace:Unidad_3.ViewModels" d:DataContext="{d:DesignInstance Type=vm:CambiosDeVista}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Canvas>
-        <Canvas.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="Yellow" Offset="0.0" />
-                <GradientStop Color="Blue" Offset="0.5" />
-                <GradientStop Color="Red" Offset="1.0" />
-            </LinearGradientBrush>
-        </Canvas.Background>
+        <Button Content="⬅️" FontSize="50" Command="{Binding CambioVista}" CommandParameter="{x:Static vm:Vistas.Menú}"/>
         <TextBlock Text="Hola Mundo" FontSize="100" FontWeight="Bold" Canvas.Left="105" Canvas.Top="10">
             <TextBlock.Foreground>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -22,5 +17,12 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
+        <Canvas.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Yellow" Offset="0.0" />
+                <GradientStop Color="Blue" Offset="0.5" />
+                <GradientStop Color="Red" Offset="1.0" />
+            </LinearGradientBrush>
+        </Canvas.Background>
     </Canvas>
 </UserControl>

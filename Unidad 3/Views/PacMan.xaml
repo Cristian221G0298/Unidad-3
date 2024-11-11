@@ -4,9 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Unidad_3.Views"
+             xmlns:vm="clr-namespace:Unidad_3.ViewModels" d:DataContext="{d:DesignInstance Type=vm:CambiosDeVista}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="Black">
     <Canvas>
+        <Button Content="⬅️" FontSize="50" Command="{Binding CambioVista}" CommandParameter="{x:Static vm:Vistas.Menú}"/>
         <Path Stroke="Black" Fill="Yellow" Data="M550,200 A100,100 180 1 0 550,300 L450,250 L550,200"/>
         <Ellipse Width="40" Height="40" Canvas.Left="460" Canvas.Top="180" Fill="White" Stroke="Black"/>
         <Ellipse Width="30" Height="30" Canvas.Left="465" Canvas.Top="185" Fill="Black"/>

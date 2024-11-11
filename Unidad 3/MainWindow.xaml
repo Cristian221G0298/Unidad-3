@@ -4,34 +4,170 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Unidad_3"
+        xmlns:view="clr-namespace:Unidad_3.Views"
+        xmlns:vm="clr-namespace:Unidad_3.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
-    <Canvas>
-        <Path Stroke="Blue" StrokeThickness="2" Data="M200,200 H250 L260,220 L240,280 L270,430 L225,470 L180,430 L210,280 L190,220 L200,200">
-            <Path.Fill>
-                <LinearGradientBrush>
-                    <GradientStop Color="DarkBlue" Offset="0.05"/>
-                    <GradientStop Color="DarkBlue" Offset="0.1"/>
-                    <GradientStop Color="Blue" Offset="0.15"/>
-                    <GradientStop Color="Blue" Offset="0.2"/>
-                    <GradientStop Color="White" Offset="0.25"/>
-                    <GradientStop Color="White" Offset="0.3"/>
-                    <GradientStop Color="DarkBlue" Offset="0.35"/>
-                    <GradientStop Color="DarkBlue" Offset="0.4"/>
-                    <GradientStop Color="Blue" Offset="0.45"/>
-                    <GradientStop Color="Blue" Offset="0.5"/>
-                    <GradientStop Color="White" Offset="0.55"/>
-                    <GradientStop Color="White" Offset="0.6"/>
-                    <GradientStop Color="DarkBlue" Offset="0.65"/>
-                    <GradientStop Color="DarkBlue" Offset="0.7"/>
-                    <GradientStop Color="Blue" Offset="0.75"/>
-                    <GradientStop Color="Blue" Offset="0.8"/>
-                    <GradientStop Color="White" Offset="0.85"/>
-                    <GradientStop Color="White" Offset="0.9"/>
-                    <GradientStop Color="DarkBlue" Offset="0.95"/>
-                    <GradientStop Color="DarkBlue" Offset="1"/>
-                </LinearGradientBrush>
-            </Path.Fill>
-        </Path>
-    </Canvas>
+    <Window.DataContext>
+        <vm:CambiosDeVista/>
+    </Window.DataContext>
+
+    <Grid>
+        <view:Menú>
+            <view:Menú.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Menú}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Menú.Style>
+        </view:Menú>
+
+        <view:Arcoíris>
+            <view:Arcoíris.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Arcoíris}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Arcoíris.Style>
+        </view:Arcoíris>
+
+        <view:Colores>
+            <view:Colores.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Colores}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Colores.Style>
+        </view:Colores>
+
+        <view:Corbata>
+            <view:Corbata.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Corbata}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Corbata.Style>
+        </view:Corbata>
+
+        <view:CorbataConPuntos>
+            <view:CorbataConPuntos.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.CorbataConPuntos}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:CorbataConPuntos.Style>
+        </view:CorbataConPuntos>
+
+        <view:Foco>
+            <view:Foco.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Foco}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Foco.Style>
+        </view:Foco>
+
+        <view:Ojo>
+            <view:Ojo.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Ojo}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Ojo.Style>
+        </view:Ojo>
+
+        <view:PacMan>
+            <view:PacMan.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.PacMan}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:PacMan.Style>
+        </view:PacMan>
+
+        <view:Paleta>
+            <view:Paleta.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Paleta}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Paleta.Style>
+        </view:Paleta>
+
+        <view:Sonaja>
+            <view:Sonaja.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Sonaja}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Sonaja.Style>
+        </view:Sonaja>
+
+        <view:_4Imágenes>
+            <view:_4Imágenes.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.ImageBrush}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:_4Imágenes.Style>
+        </view:_4Imágenes>
+
+        <view:_4Tréboles>
+            <view:_4Tréboles.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.VisualBrush}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:_4Tréboles.Style>
+        </view:_4Tréboles>
+    </Grid>
+    
 </Window>

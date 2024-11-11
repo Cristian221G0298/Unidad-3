@@ -4,11 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Unidad_3.Views"
+                          xmlns:vm="clr-namespace:Unidad_3.ViewModels" d:DataContext="{d:DesignInstance Type=vm:CambiosDeVista}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Canvas>
+        <Button Content="⬅️" FontSize="50" Command="{Binding CambioVista}" CommandParameter="{x:Static vm:Vistas.Menú}"/>
         <Canvas.Background>
-            <VisualBrush Viewport="0,0,0.5,0.5" TileMode="FlipXY">
+            <VisualBrush Viewport="0,0,0.5,0.5" TileMode="FlipXY" Stretch="Uniform" >
                 <VisualBrush.Visual>
                     <Path Stroke="Black" Fill="Black" Data="M330,390 H335,440 L415,310 A60,65 1 1 0 420,205 A60,65 1 1 0 350,205 A60,65 1 1 0 355,305"/>
                 </VisualBrush.Visual>
