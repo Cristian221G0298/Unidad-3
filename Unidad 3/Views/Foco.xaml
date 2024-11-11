@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Unidad_3.Views.Foco"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Unidad_3.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="460">
+    <Canvas Background="Yellow">
+        <Path Stroke="Black" StrokeThickness="2" Data="M200,200 V245 H260 V200 H200 M200,215 H260 M200,230 H260 M200,245 A10,10 0,0,0 260,245 M260,200 C263,175 310,150 315,100 M200,200 C197,175 150,150 145,100 A10,10 0,0,1 315,100 M200,150 V100 L230,125 L260,100 V150"/>
+    </Canvas>
+</UserControl>
