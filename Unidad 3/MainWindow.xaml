@@ -168,6 +168,19 @@
                 </Style>
             </view:_4Tréboles.Style>
         </view:_4Tréboles>
+
+        <view:Logo>
+            <view:Logo.Style>
+                <Style TargetType="UserControl">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Vista}" Value="{x:Static vm:Vistas.Logo}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </view:Logo.Style>
+        </view:Logo>
     </Grid>
     
 </Window>

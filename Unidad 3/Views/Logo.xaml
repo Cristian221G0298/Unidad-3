@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Unidad_3.Views.Logo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Unidad_3.Views"
+             xmlns:vm="clr-namespace:Unidad_3.ViewModels" d:DataContext="{d:DesignInstance Type=vm:CambiosDeVista}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="#1A2B3C">
+    <Canvas>
+        <Button Content="⬅️" FontSize="50" Command="{Binding CambioVista}" CommandParameter="{x:Static vm:Vistas.Menú}"/>
+        <Path Stroke="#FF465C" StrokeThickness="20" StrokeLineJoin="Round" Data="M400,100 L700,200 V300 L400,400 L100,300 V200 Z">
+            <Path.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="Blue" Offset="0.2"/>
+                    <GradientStop Color="CadetBlue" Offset="0.4"/>
+                    <GradientStop Color="CornflowerBlue" Offset="0.6"/>
+                    <GradientStop Color="DarkBlue" Offset="0.8"/>
+                    <GradientStop Color="DeepSkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Stroke="White" StrokeThickness="12" StrokeLineJoin="Round" Data="M205,300 V200 L235,250 L265,200 V300"/>
+        <Ellipse Stroke="White" StrokeThickness="12" Height="105" Width="70" Canvas.Top="195" Canvas.Left="290"/>
+        <Path Stroke="White" StrokeThickness="12" Data="M385,300 V200 A10,5 0,0,1 385,255 M385,255 L440,295"/>
+        <Path Stroke="White" StrokeThickness="12" Data="M460,300 L490,210 L520,300"/>
+        <Path Stroke="White" StrokeThickness="12" Data="M560,300 V205 H600 M560,205 H520"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M205,240 L190,250 L205,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M265,240 L280,250 L265,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M300,240 L285,250 L300,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M350,240 L365,250 L350,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M385,240 L370,250 L385,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M475,240 L460,250 L470,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M505,240 L520,250 L505,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M555,240 L540,250 L555,260"/>
+        <Path Stroke="White" StrokeThickness="1" Fill="White" Data="M565,240 L580,250 L565,260"/>
+        <Canvas.Background>
+            <DrawingBrush>
+                <DrawingBrush.Drawing>
+                    <DrawingGroup>
+                        <GeometryDrawing Brush="#1A2B3C">
+                            <GeometryDrawing.Geometry>
+                                <RectangleGeometry Rect="0,0,10,10"/>
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                        <GeometryDrawing Brush="LightBlue">
+                            <GeometryDrawing.Geometry>
+                                <EllipseGeometry Center="5,5" RadiusX="1" RadiusY="1"/>
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                    </DrawingGroup>
+                </DrawingBrush.Drawing>
+                <DrawingBrush.TileMode>FlipY</DrawingBrush.TileMode>
+                <DrawingBrush.Viewport>0,0,10,10</DrawingBrush.Viewport>
+                <DrawingBrush.ViewportUnits>Absolute</DrawingBrush.ViewportUnits>
+            </DrawingBrush>
+        </Canvas.Background>
+    </Canvas>
+</UserControl>

@@ -24,6 +24,7 @@
         <Button Content="Corbata" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.Corbata}"/>
         <Button Content="Corbata con puntos" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.CorbataConPuntos}"/>
         <Button Content="Foco" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.Foco}"/>
+        <Button Content="Logo" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.Logo}"/>
         <Button Content="Ojo" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.Ojo}"/>
         <Button Content="PacMan" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.PacMan}"/>
         <Button Content="Paleta" Command="{Binding CambioVista}" CommandParameter="{x:Static viewmodel:Vistas.Paleta}"/>

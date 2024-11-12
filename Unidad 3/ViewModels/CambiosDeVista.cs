@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace Unidad_3.ViewModels
 {
-    public enum Vistas { Menú, ImageBrush, VisualBrush, Arcoíris, Colores, Corbata, CorbataConPuntos, Foco, Ojo, PacMan, Paleta, Sonaja }
+    public enum Vistas { Menú, ImageBrush, VisualBrush, Arcoíris, Colores, Corbata, CorbataConPuntos, Foco, Ojo, PacMan, Paleta, Sonaja, Logo }
     public class CambiosDeVista : INotifyPropertyChanged
     {
         public ICommand CambioVista { get; set; }
